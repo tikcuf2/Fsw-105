@@ -51,7 +51,7 @@ function div( num1, num2){
     return num1 / num2;
 
 }
-
+ 
 function cal( num1, num2, op ){
     if ( op == 'add'){
         console.log("The Result Is, " + add(num1, num2));
