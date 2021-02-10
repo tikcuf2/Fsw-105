@@ -1,3 +1,9 @@
+
+
+//----- SECTION A-----
+//--1) Given an array of numbers, return a new array that has only the numbers that are greater than 5.
+
+
 function fiveAndGreaterOnly(Jared){
     var question1 = Jared.filter(function (greateronly){
         if (greateronly > 5){
@@ -7,9 +13,13 @@ function fiveAndGreaterOnly(Jared){
     });
     return question1 
 }
-
 //console.log(fiveAndGreaterOnly([3,6,8,2,5,9]));
 
+
+
+
+
+//--2) Given an array of numbers, return a new array that only includes the even numbers.
 function evensOnly(em){
     var question1 = em.filter(function (even){
         if (even %2 === 0){
@@ -21,6 +31,16 @@ function evensOnly(em){
 }
 //console.log(evensOnly([3,6,8,2,5,4]));
 
+
+
+
+
+
+
+
+// ----------SECTION B ---------------------------
+
+//--1)Make an array of numbers that are doubles of the first array
 function doubleNumbers(tt){
     var question1 = tt.map(function (even){
             return even *2
@@ -35,7 +55,7 @@ function doubleNumbers(tt){
 
 
 
-
+//--2) Take an array of numbers and make them strings
 function stringItUp(arr1){
     const result = arr1.map(function(num){
         return num.toString();
@@ -43,6 +63,12 @@ function stringItUp(arr1){
     return result;
 }
 
+
+//console.log(stringItUp([2, 5, 100]));
+
+
+
+//--3)Capitalize each of an array of names
 
 function capitalizeNames(arr1){
     const result = arr1.map(function(capitalizeNames){
@@ -53,7 +79,9 @@ function capitalizeNames(arr1){
 
 //console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
 
+//--------------------SECTION C -----------------------------
 
+//--1) Turn an array of numbers into a total of all the numbers
 
 function total(splang)
 {
@@ -67,7 +95,7 @@ function total(splang)
 
  //console.log(total([1, 2, 3]));
 
-
+//--  2) Turn an array of numbers into a long string of all those numbers.
 
     function stringConcat(arr){
 
@@ -80,10 +108,11 @@ function total(splang)
     }
 
 
-    // console.log(stringConcat([1, 2, 3]));
+   //  console.log(stringConcat([1, 2, 3]));
 
 
 
+//-- 3) Turn an array of voter objects into a count of how many people voted
 
      function totalVoters(arr) {
         return arr.reduce(function(x, y){
@@ -112,19 +141,25 @@ function total(splang)
 
             //console.log(totalVoters(voters))
 
-            function leastToGreatest(arr) {
+
+//----------SECTION D (sort)------------------------------
+
+//--1) Sort an array from smallest number to largest
+
+    function leastToGreatest(arr) {
                 return arr.sort((num1,num2) => {
                     console.log(num1, num2 )
                     return (num1 - num2)
                 })
             }
             
-            console.log(leastToGreatest([1, 3, 5, 2, 90, 20]));
+            //console.log(leastToGreatest([1, 3, 5, 2, 90, 20]));
 
 
 
 
 
+//--2) Sort an array from largest number to smallest--
 
 function greatestToLeast(arr) {
     return arr.sort((num1,num2) => {
@@ -137,6 +172,7 @@ function greatestToLeast(arr) {
 
 
 
+//-- 3) Sort an array from shortest string to longest--
 function lengthSort(arr){
 
     return arr.sort((str1 ,str2) => {
