@@ -19,7 +19,7 @@ var keyY= false;
 
 while(keyN == true){
 
-const mainMenu = readlineSync.keyIn('Enter 1 to put hand in hole\n enter 2 to find the key \n enter 3 to open the door ', {limit: '$<1-5>'});
+const mainMenu = readlineSync.keyIn('Enter 1 to put hand in hole\n enter 2 to find the key \n enter 3 to open the door ', {limit: '$<1-9>'});
 console.log(mainMenu);
 
 
